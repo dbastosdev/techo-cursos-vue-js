@@ -18,8 +18,9 @@
 
     <!--Usando o router -->
     <!-- Ao inserir esse elemento aqui é inserido dinâmicamente os componentes
-    listados dentro do vue-router. -->
-    <router-view></router-view>
+    listados dentro do vue-router. 
+    este ainda aceita estilos com classes. -->
+    <router-view class="container"></router-view>
   </div>
 </template>
 
@@ -59,7 +60,11 @@ a{
   color: white;
 }
 
-
+.container{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
 
 </style>
