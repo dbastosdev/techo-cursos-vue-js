@@ -1,12 +1,13 @@
 <template>
   <div>
-
+    <h1>Página de contato</h1>
   </div>
 </template>
 
 <script>
 
 export default {
-  name: 'HomeView'
+   // Exporta a view
+  name: 'ContatoView'
 }
 </script>

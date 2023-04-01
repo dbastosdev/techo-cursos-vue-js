@@ -11,10 +11,55 @@
 
 <template>
   <div id="app">
-   
+
+    <!--Aqui é usado o Header com a navegação da aplicação-->
+    <!-- Esse componente foi importado e diretamente utilizado aqui mesmo. -->
+    <TheHeader/>
+
+    <!--Usando o router -->
+    <!-- Ao inserir esse elemento aqui é inserido dinâmicamente os componentes
+    listados dentro do vue-router. -->
+    <router-view></router-view>
   </div>
 </template>
 
+<script>
+                      // @ é um atalho para pasta src
+import TheHeader from '@/components/TheHeader.vue' // A importação sai da pasta e entra em outra
+
+export default{
+  // Registrando os componentes importados:
+  components:{
+    TheHeader
+  }
+};
+
+</script>
+
+
 <style>
+
+/* Como aqui é como se fosse a página principal, o reset do css vem aqui */
+
+body{
+  margin: 0px;
+  font-family: "Avenir", Arial, Helvetica, sans-serif;
+  color: #234;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+a{
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+
+
 
 </style>

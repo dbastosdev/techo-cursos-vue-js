@@ -48,6 +48,9 @@ instância do vue.
 
 CLI: 
 
+## Create project:
+vue create techno  
+
 ## Project setup
 ```
 npm install
