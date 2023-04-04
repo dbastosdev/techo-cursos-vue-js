@@ -40,7 +40,10 @@ export default{
 
 <style>
 
-/* Como aqui é como se fosse a página principal, o reset do css vem aqui */
+/* 
+   Como aqui é como se fosse a página principal, o reset do css vem aqui e também 
+   as definições de classes gerais usadas em todo o site.
+*/
 
 body{
   margin: 0px;
@@ -60,10 +63,37 @@ a{
   color: white;
 }
 
+img{
+  max-width: 100%;
+}
+
 .container{
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+}
+
+/* estilo do transition de animação do conteúdo */
+.v-enter {
+  opacity: 0;
+  transform: translate3d(-20px, 0, 0);
+}
+
+.v-enter-active{
+  transition: all .3s;
+}
+
+/* estilo global de exibição de conteúdo */
+.conteudo{
+  display: grid;
+  grid-template-columns: 1fr minmax(200px, 400px);
+  gap: 30px;
+}
+
+@media screen and (max-width: 700px) {
+  .conteudo{
+    display: block;
+  }
 }
 
 

@@ -7,6 +7,8 @@ Uso do Router:
 
 O componente router-view é utilizado para indicarmos que um componente baseado no Router deverá 
 ser carregado naquela área. O router-link é utilizado para criar os links de navegação.
+O router link pode ser usado para links fixos do que já existe registrado neste arquivo
+como transformar parte de um compoenente em link
 */
 
 import Vue from 'vue' // Importação do vue
@@ -18,6 +20,9 @@ import Router from 'vue-router' // Importação do router
 import HomeView from '../views/Home.vue'
 import ContatoView from '../views/Contato.vue' // A importação sai da pasta e entra em outra
 import CursosView from '../views/Cursos.vue' // A importação sai da pasta e entra em outra
+import CursoView from '@/views/Curso.vue' 
+import AulaView from '@/views/Aula.vue' 
+
 
 
 
@@ -42,6 +47,24 @@ export default new Router({
       path: "/cursos",
       name: "cursos",
       component: CursosView
+    },
+    {
+      // o path retorna o template de um curso. E ainda recebe dados após os ":"
+      // trata-se de uma rota dinâmica
+      path: "/cursos/:curso",
+      name: "curso",
+      component: CursoView,
+      props: true, // habilita o recebimento de dados via url
+      // Aqui determina o filho do curso, que no caso será uma aula.
+      children: [
+        {
+          name: "aula",
+          path: ":aula", // isso aqui será incluído dinamicamente no path do pai
+          component: AulaView,
+          props: true
+        }
+
+      ]
     }
   ]
 })

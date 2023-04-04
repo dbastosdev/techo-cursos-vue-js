@@ -2,6 +2,11 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 
+// Importação de componentes globais criados por nós
+import PageLoading from '@/components/PageLoading.vue' // importação
+Vue.component("PageLoading", PageLoading) // Registro
+
+
 // Apenas para indicar produção. Gera erro se for removido.
 Vue.config.productionTip = false
 
