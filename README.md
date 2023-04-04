@@ -30,3 +30,7 @@ $ npm run serve
 
 ## Imagens do projeto: 
 
+<p align="center">
+ <img src="https://github.com/dbastosdev/techo-cursos-vue-js/blob/main/home.png" />
+ <img src="https://github.com/dbastosdev/techo-cursos-vue-js/blob/main/cursos.png" />
+</p>
