@@ -1,5 +1,12 @@
 # techo-cursos-vue-js
 
+## Imagens do projeto: 
+
+<p align="center">
+ <img src="https://github.com/dbastosdev/techo-cursos-vue-js/blob/main/home.png" />
+ <img src="https://github.com/dbastosdev/techo-cursos-vue-js/blob/main/cursos.png" />
+</p>
+
 Projeto de um front-end para consumo e exibição de cursos de api externa. 
 
 Stack: vue.js, vue-router e json-server. 
@@ -28,9 +35,4 @@ Deve-se estar dentro da pasta do projeto vue.
 $ npm run serve
 ```
 
-## Imagens do projeto: 
 
-<p align="center">
- <img src="https://github.com/dbastosdev/techo-cursos-vue-js/blob/main/home.png" />
- <img src="https://github.com/dbastosdev/techo-cursos-vue-js/blob/main/cursos.png" />
-</p>
