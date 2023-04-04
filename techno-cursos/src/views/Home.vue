@@ -34,8 +34,6 @@
         
 
         <img src="../assets/aprender.png" alt="aprenda web design">
-
-        <p>{{ api }}</p>
         
       </div>
     </transition>
